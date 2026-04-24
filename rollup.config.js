@@ -16,6 +16,7 @@ export default {
     replace({
       preventAssignment: true,
       '__FORUM_SHARED_SECRET__': JSON.stringify(process.env.FORUM_SHARED_SECRET),
+      'process.env.NODE_ENV': JSON.stringify('production'),
     }),
     vue(),
     resolve({ browser: true }),
