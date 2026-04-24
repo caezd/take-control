@@ -29793,8 +29793,8 @@ Expected function or array of functions, received type ${typeof value}.`
   const SUPABASE_URL = "https://hnlhsowjqbnpewvzdfxp.supabase.co";
   const SUPABASE_ANON_KEY = "sb_publishable_M4hdVZm58YQWSw6S7bfSJA_kMD0LIeD";
 
-  // Doit correspondre à la variable d'env FORUM_SHARED_SECRET dans Supabase Edge Functions
-  const FORUM_SHARED_SECRET = "sk_live_HTgaGkqMNa8DhHLWFg3yVNXEziLQwvNX";
+  // Injecté au build depuis .env (ne jamais mettre la valeur ici)
+  const FORUM_SHARED_SECRET = '"sk_live_HTgaGkqMNa8DhHLWFg3yVNXEziLQwvNX"';
 
   const EDGE_FUNCTION_URL = `${SUPABASE_URL}/functions/v1/forum-auth`;
 
